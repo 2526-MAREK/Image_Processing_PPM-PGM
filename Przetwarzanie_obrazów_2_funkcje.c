@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
 #include "Przetwarzanie_obrazów_2.h"
-#define PGM 1
-#define WYBRANO_KOLOR 10
 
 /********************************************************************************************
 
