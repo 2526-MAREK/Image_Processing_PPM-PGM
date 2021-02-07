@@ -32,7 +32,7 @@ Or you must launch program with options: ./Przetwarzanie_Obrazów.out [Options](
 The ability to call the program(the pattern of the appropriate typing order):
 ./Przetwarzanie_Obrazów.out {[-i name(without space,tabluator)] [-m (r, g, b ,s)] [-p number] [-n] [-k] [-t] [-o name(without space,tabulator)]  [-d] }
 
-## Features
+## Options
 
 -i <name_file> name file to loaded
 -o <name_file> name file to write
