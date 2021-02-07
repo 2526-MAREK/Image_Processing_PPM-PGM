@@ -12,7 +12,7 @@ Image_Processing_PPM/PGM
 * [Contact](#contact)
 
 ## General info
-Program processes Images about format PPM and PGM with choosen option [Features](#features)
+Program processes Images about format PPM and PGM with choosen option [Options](#options)
 
 ## Technologies
 Language C ANSI C99
