@@ -99,15 +99,15 @@ int czytaj(FILE * plik_we, T_OBRAZ * obraz, ZMIENNE_POM_DO_OBRAZOW *zm_pom) {
 *********************************************************************************************************/
 int Zapisz (FILE *plik_wy, T_OBRAZ * obraz, ZMIENNE_POM_DO_OBRAZOW *zm_pom){
   int i,j;
-  char nazwa_pliku_wy[DL_LINII]; //Tworze tablice tymczasowa do przechowania nazwy wy
+  //  char nazwa_pliku_wy[DL_LINII]; //Tworze tablice tymczasowa do przechowania nazwy wy
 	
   int (*piksele)[obraz->format*obraz->wymx];
   piksele=(int(*)[obraz->format*obraz->wymx]) obraz->piksele;
 	
   if(zm_pom->opcja_z_menu==B_BRAK_ARGUMENTOW_WIERSZA_POLECEN){	
     printf("Podaj nazwe pliku wyjsciowego:\n");
-    scanf("%s", nazwa_pliku_wy);
-    obraz->nazwa_pliku_wy=nazwa_pliku_wy;
+    scanf("%s", obraz->nazwa_pliku_wy_tym);
+    obraz->nazwa_pliku_wy = obraz->nazwa_pliku_wy_tym;
   }
   
   plik_wy=fopen(obraz->nazwa_pliku_wy,"w");

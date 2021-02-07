@@ -29,6 +29,7 @@ typedef struct t_obraz {
   int szarosci;
   void *piksele;
   int format;
+  char nazwa_pliku_wy_tym[]; //tablica tymczasowa (program korzysta zniej gdy użytkownik używa menu)
 }T_OBRAZ;
 
 /*Struktura do przechowywania zmiennych pomocniczych do obrazów*/
@@ -47,6 +48,7 @@ typedef struct zmienne_pom_do_obrazow{
   int wypisano;       //zmienna pomocnicza do komunikatow o bledach znajduje sie w funkcji Wczytaj_plik() i w przetwarzaj_opcje() flaga -o
   int blad;            //zmienna pomocnicza jesli wystapil blad, powoduje ze program nie wyswietla odpowiedniego komunikatu ( ten komunikat jest zwarty w funkcji main() pod koniec
   int przetworzono;   //zmienna pomocnicza do rozroznienia czy uzytkownik korzysta z menu czy z agrumentow wiersza polecen ( zwarta jest ona w funkcji przetwarzaj opcje w funkcji switch w fladze -o i -d
+  int argc_pom;
 }ZMIENNE_POM_DO_OBRAZOW;
 
 /*Prototypy funkcji*/
